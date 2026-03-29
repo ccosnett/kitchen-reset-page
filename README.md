@@ -42,6 +42,6 @@
 
 ## *Intention*
 
-Leave the room calm, usable, and joyful.
+*Leave the room calm, usable, and joyful.*
 
-Reset the kitchen efficiently with minimal cognitive load.
+*Reset the kitchen efficiently with minimal cognitive load.*
