@@ -1,6 +1,13 @@
-# Kitchen Reset Page
+# Kitchen Reset
 
-This repository now includes the kitchen reset intention document and the kitchen reset flowchart.
+## Before You Leave The Kitchen
 
-- Intention: [`docs/kitchen-reset-intention.md`](docs/kitchen-reset-intention.md)
-- Flowchart source: [`docs/kitchen-reset-flowchart.md`](docs/kitchen-reset-flowchart.md)
+You may leave the kitchen when these are done:
+
+1. Dishes are put away or staged for later.
+2. Work surfaces are clear.
+3. Couch is reset.
+4. Floor is swept.
+5. Heater is reset.
+
+Leave the room calm, usable, and joyful.

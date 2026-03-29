@@ -40,8 +40,8 @@ A kitchen reset means the room has returned to a stable, joyful in-between state
 
 1. Reset the dishes by putting away what is ready and staging the rest for later.
 2. Clear the work surfaces so the room becomes usable again.
-3. Sweep the floor.
-4. Reset the couch.
+3. Reset the couch.
+4. Sweep the floor.
 5. Reset the heater.
 6. Finish once the room feels calm, functional, and no longer overwhelming.
 
