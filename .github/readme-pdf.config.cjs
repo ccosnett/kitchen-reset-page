@@ -78,6 +78,9 @@ module.exports = {
       color: #1f2937;
     }
   `,
+  launch_options: {
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  },
   page_media_type: "print",
   pdf_options: {
     format: "A4",
