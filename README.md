@@ -6,6 +6,7 @@ You may leave the kitchen when these are done:
 
 **Dishes**
 
+- Find dry towel.
 - Dry and put away clean dishes from the rack.
 - Dry and put away clean cutlery.
 - Scan the room for dirty dishes and cutlery and put them in the sink.
