@@ -19,6 +19,8 @@
 
 1. Put all perishable items in the fridge.
 2. Put salt and pepper on the shelf.
+3. Move other items to their default locations.
+4. Wipe down work surfaces.
 
 ---
 
