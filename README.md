@@ -33,7 +33,12 @@
 
 ### 🧹 Floor
 
-- Swept.
+1. Move all items from the floor to their appropriate locations.
+2. Retrieve broom and dustpan from their location.
+3. Empty ashpan.
+4. Sweep floor.
+5. Empty dustpan.
+6. Put broom and dustpan back.
 
 ---
 
