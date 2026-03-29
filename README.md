@@ -11,6 +11,7 @@ You may leave the kitchen when these are done:
 - Dry and put away clean cutlery.
 - Scan the room for dirty dishes and cutlery and put them in the sink.
 - Pour water on the dirty dishes and cutlery.
+- Hang dry towel on copper pipe.
 
 **Work Surfaces**
 
