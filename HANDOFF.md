@@ -1,5 +1,7 @@
 # Handoff
 
+Last updated: 2026-03-29
+
 ## Project
 - Repo name: `kitchen-reset-page`
 - Local path: `/Users/johncosnett/PycharmProjects/kitchen-reset-page`
@@ -13,64 +15,63 @@
 - Issue: `SID-200`
 - Issue title: `make kitchen reset page`
 - Issue URL: `https://linear.app/sid-meiers-blockchains/issue/SID-200/make-kitchen-reset-page`
-- The issue was created during this session and is currently in `Backlog`.
 
-## What Was Done In This Session
-- Created the local git repo.
-- Created the private GitHub repo and pushed the initial commit.
-- Added a kitchen reset flowchart in Mermaid.
-- Updated the top-level README to link to the flowchart file.
+## Current Repo State
+- Branch: `main`
+- Working tree: clean
+- Latest commits:
+  - `9d73724` `Update README PDF [skip ci]`
+  - `ed26fc4` `Commit generated README PDF`
+  - `0d223e6` `Fix README PDF workflow Chromium launch`
+  - `ed2f36b` `Add README PDF GitHub workflow`
 
-## Current Files
+## What The Project Currently Contains
 - `README.md`
-  - Short project description.
-  - Links to the flowchart document.
+  - The main kitchen reset checklist.
+  - Current sections: dishes, work surfaces, couch, floor, and intention.
+  - The heater section was removed.
+- `build/README.pdf`
+  - A generated single-page A4 PDF version of the README.
 - `docs/kitchen-reset-flowchart.md`
-  - Contains the Mermaid diagram.
-  - Contains the Mermaid source block used to generate it.
+  - Mermaid flowchart for an earlier flow-oriented version of the task.
+- `docs/kitchen-reset-intention.md`
+  - Supporting project/intention notes.
+- `.github/workflows/readme-pdf.yml`
+  - GitHub Actions workflow that renders `README.md` to PDF.
+  - Uploads the PDF as an artifact.
+  - Commits `build/README.pdf` back to `main` when the rendered file changes.
+- `.github/readme-pdf.config.cjs`
+  - Print styling and PDF settings for the README-to-PDF conversion.
+  - Includes Puppeteer launch args `--no-sandbox` and `--disable-setuid-sandbox` because GitHub's Ubuntu runner failed without them.
 
-## Current Working Idea
-The kitchen reset flow was optimized for shortest elapsed time by starting the passive task early.
+## What Was Done Recently
+- Added a GitHub Actions workflow named `Build README PDF`.
+- Configured the workflow to run on pushes to `main` when `README.md` or the workflow/config files change, and on `workflow_dispatch`.
+- Verified the workflow renders `README.md` to a single A4 page.
+- Investigated and fixed the initial GitHub Actions failure caused by Chromium sandbox restrictions on the runner.
+- Updated the workflow so the generated PDF is committed back into the repo automatically.
+- Confirmed the workflow now succeeds on GitHub and that the bot can push `build/README.pdf`.
 
-Flow order:
-1. Put away dry dishes and cutlery from the sink rack.
-2. Fill the water filter.
-3. Put away table mats if present.
-4. Move dirty dishes to the sink tub or onto the stove staging area.
+## Important Workflow Behavior
+- The workflow is intentionally stateful: it may create a follow-up bot commit on `main` with message `Update README PDF [skip ci]`.
+- That bot commit is expected behavior, not a malfunction.
+- The `[skip ci]` text is there to avoid an infinite commit loop.
+- The workflow still uploads the generated PDF as an artifact even though the PDF is also committed to the repo.
 
-## Current Mermaid Source
-```mermaid
-flowchart TD
-    A["Start kitchen reset"] --> B{"Dry dishes or cutlery in rack?"}
-    B -- Yes --> C["Put away dry dishes and cutlery"]
-    B -- No --> D["Fill water filter"]
-    C --> D
-    D --> E{"Table mats present?"}
-    E -- Yes --> F["Put away table mats"]
-    E -- No --> G{"Dirty dishes outside sink area?"}
-    F --> G
-    G -- Yes --> H["Move dirty dishes to sink tub or stove staging area"]
-    G -- No --> I["Kitchen reset complete"]
-    H --> I
-```
-
-## Git Status At Handoff
-There are uncommitted changes in the repo at the time of handoff:
-- Modified: `README.md`
-- Untracked: `docs/kitchen-reset-flowchart.md`
-
-A new Codex session should run `git status` first and decide whether to commit these files.
+## Known Constraints
+- The PDF layout is tuned to the current README length and formatting.
+- If the README grows materially, the single-page A4 constraint may break and the print CSS may need to be tightened again.
+- GitHub Actions is warning that some `actions/*@v4` actions still run on the Node 20 runtime. This is not currently breaking the workflow, but those action versions should be updated later.
 
 ## Recommended Next Steps
-1. Open this repo as the active workspace in a new Codex session.
-2. Inspect `README.md` and `docs/kitchen-reset-flowchart.md`.
-3. Commit the current documentation changes.
-4. Decide whether to turn the flowchart into an actual web page.
-5. If building the page, keep it simple first: a single page with the rendered chart and a short checklist.
+1. If the README content changes, check whether the committed `build/README.pdf` still looks correct after the workflow runs.
+2. If the checklist is becoming the real product, decide whether to keep it as README-first documentation or turn it into an actual page/app.
+3. If continuing the automation work, update the workflow actions to versions that are aligned with GitHub's Node 24 migration.
 
 ## Suggested Prompt For The Next Codex Session
 ```text
 Use /Users/johncosnett/PycharmProjects/kitchen-reset-page as the active repo.
 Read HANDOFF.md first.
-Then inspect the uncommitted changes, commit the documentation work if it looks good, and help me build the kitchen reset page for Linear issue SID-200.
+Assume the README-to-PDF GitHub workflow is part of the product now.
+Check whether the current README and generated PDF still match the intended kitchen reset experience, then continue from there.
 ```
