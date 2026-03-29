@@ -4,10 +4,24 @@
 
 You may leave the kitchen when these are done:
 
-1. Dishes are put away or staged for later.
-2. Work surfaces are clear.
-3. Couch is reset.
-4. Floor is swept.
-5. Heater is reset.
+**Dishes**
+
+- Put away or stage for later.
+
+**Work Surfaces**
+
+- Clear and usable.
+
+**Couch**
+
+- Reset.
+
+**Floor**
+
+- Swept.
+
+**Heater**
+
+- Reset.
 
 Leave the room calm, usable, and joyful.
