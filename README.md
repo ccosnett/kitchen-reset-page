@@ -24,7 +24,8 @@
 
 ### 🛋️ Couch
 
-- Reset.
+1. Fold blankets.
+2. Arrange cushions.
 
 ---
 
