@@ -6,7 +6,10 @@ You may leave the kitchen when these are done:
 
 **Dishes**
 
-- Put away or stage for later.
+- Dry and put away clean dishes from the rack.
+- Dry and put away clean cutlery.
+- Scan the room for dirty dishes and cutlery and put them in the sink.
+- Pour water on the dirty dishes and cutlery.
 
 **Work Surfaces**
 
