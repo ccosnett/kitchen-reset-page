@@ -42,12 +42,6 @@
 
 ---
 
-### 🔥 Heater
-
-- Reset.
-
----
-
 ## *Intention*
 
 *Leave the room calm, usable, and joyful.*
