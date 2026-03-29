@@ -17,7 +17,8 @@
 
 ### 🧽 Work Surfaces
 
-- Clear and usable.
+1. Put all perishable items in the fridge.
+2. Put salt and pepper on the shelf.
 
 ---
 
