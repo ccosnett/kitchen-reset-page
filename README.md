@@ -2,30 +2,38 @@
 
 ## Before You Leave The Kitchen
 
-You may leave the kitchen when these are done:
+> You may leave the kitchen when these are done.
 
-**Dishes**
+### 🍽️ Dishes
 
-- Find dry towel.
-- Dry and put away clean dishes from the rack.
-- Dry and put away clean cutlery.
-- Scan the room for dirty dishes and cutlery and put them in the sink.
-- Pour water on the dirty dishes and cutlery.
-- Hang dry towel on copper pipe.
+1. Find dry towel.
+2. Dry and put away clean dishes from the rack.
+3. Dry and put away clean cutlery.
+4. Scan the room for dirty dishes and cutlery and put them in the sink.
+5. Pour water on the dirty dishes and cutlery.
+6. Hang dry towel on copper pipe.
 
-**Work Surfaces**
+---
+
+### 🧽 Work Surfaces
 
 - Clear and usable.
 
-**Couch**
+---
+
+### 🛋️ Couch
 
 - Reset.
 
-**Floor**
+---
+
+### 🧹 Floor
 
 - Swept.
 
-**Heater**
+---
+
+### 🔥 Heater
 
 - Reset.
 
