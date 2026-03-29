@@ -1,3 +1,5 @@
-# kitchen-reset-page
+# Kitchen Reset Page
 
-Starter repository for the kitchen reset page project.
+This repository now includes the kitchen reset flowchart and the Mermaid source used to generate it.
+
+- Flowchart source: [`docs/kitchen-reset-flowchart.md`](docs/kitchen-reset-flowchart.md)
